@@ -8,7 +8,7 @@
 
 [Link to previous version of the paper](http://interpretable-ml.org/icml2020workshop/pdf/29.pdf) accepted at ICML '20 workshops (XXAI, WHI).
 
-#### Repository content
+#### Contents of this repository
 - [x] Code for the proposed SEA-NN algorithm
 - [ ] Code reproducing experiments (expected by the end of Feb '22)
 
