@@ -1,2 +1,2 @@
-# Improving-Attribution-Methods-by-Learning-Submodular-Functions
-Code for our method, Submodular Ensembled Attribution for Neural Networks (SEA-NN). Accepted at AISTATS '22 and ICML '20 workshops (XXAI, WHI)
+# Improving Attribution Methods by Learning Submodular Functions [AISTATS '22](https://aistats.org/aistats2022/cfp.html). 
+#### Piyushi Manupriya, Tarun Ram Menta, J. Saketha Nath, Vineeth N Balasubramanian
