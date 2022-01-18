@@ -8,9 +8,6 @@
 
 [Link to previous version of the paper](http://interpretable-ml.org/icml2020workshop/pdf/29.pdf) accepted at ICML '20 workshops (XXAI, WHI).
 
-#### Contents of this repository
-- [x] Code for the proposed SEA-NN algorithm
-- [ ] Code reproducing experiments (expected by the end of Feb '22)
 
 #### Acknowledgements
 The first author is especially grateful to the mentorship of [Dr Bilal Alsalakh](https://scholar.google.com/citations?user=0TZaxxwAAAAJ&hl=en&oi=ao) and for being supported by the Google PhD Fellowship.
