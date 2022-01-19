@@ -1,8 +1,8 @@
 # Improving Attribution Methods by Learning Submodular Functions 
 ### Accepted at the 25th International Conference on Artificial Intelligence and Statistics ([AISTATS '22](https://aistats.org/aistats2022/cfp.html)). 
-#### Piyushi Manupriya, [Tarun Ram Menta](https://github.com/peppermenta), [J. Saketha Nath](https://www.iith.ac.in/~saketha/), [Vineeth N Balasubramanian](https://www.iith.ac.in/~vineethnb/index.html)
+#### [Piyushi Manupriya](https://piyushi-0.github.io), [Tarun Ram Menta](https://github.com/peppermenta), [J. Saketha Nath](https://www.iith.ac.in/~saketha/), [Vineeth N Balasubramanian](https://www.iith.ac.in/~vineethnb/index.html)
 
-*[Code in PyTorch](https://github.com/Piyushi-0/SEA-NN) | [Link to the arxiv pre-print](https://arxiv.org/pdf/2104.09073.pdf) | [Link to the version accepted at ICML '20 workshops (XXAI, WHI)](http://interpretable-ml.org/icml2020workshop/pdf/29.pdf)*
+[Code in PyTorch](https://github.com/Piyushi-0/SEA-NN) | [Link to the arxiv pre-print](https://arxiv.org/pdf/2104.09073.pdf) | [Link to the version accepted at ICML '20 workshops (XXAI, WHI)](http://interpretable-ml.org/icml2020workshop/pdf/29.pdf)
 
 <img src="SEA-NN.jpg">
 
