@@ -4,7 +4,7 @@
 
 [Code in PyTorch](https://github.com/Piyushi-0/SEA-NN) | [Link to the arxiv pre-print](https://arxiv.org/pdf/2104.09073.pdf) | [Link to the version accepted at ICML '20 workshops (XXAI, WHI)](http://interpretable-ml.org/icml2020workshop/pdf/29.pdf)
 
-<img src="SEA-NN.jpg">
+<img src="docs/SEA-NN.jpg">
 
 *This work explores the novel idea of learning a submodular scoring function to **improve the specificity** of existing feature attribution methods. A **novel formulation for  learning a deep submodular set function** that is consistent with the real-valued attribution maps obtained by existing attribution methods is proposed. The final attribution    value of a feature is then defined as the marginal gain in the induced submodular score of the feature in the context of other highly attributed features, thus decreasing the  attribution of redundant yet discriminatory features. Experiments on multiple datasets illustrate that the proposed attribution method **achieves higher specificity along with   good discriminative power**.*
 
