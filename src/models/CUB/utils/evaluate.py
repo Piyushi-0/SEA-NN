@@ -10,6 +10,12 @@ from scipy.integrate import simps
 from skimage.transform import pyramid_gaussian
 import torchvision.transforms as transforms
 
+"""
+Code to compute Area under the perturbation curve. Inspired by the code of the following paper:
+Goh, S. W. Goh, S. Lapuschkin, L. Weber, W. Samek, and A. Binder (2021). “Understanding Integrated Gradients with SmoothTaylor for Deep Neural Network Attribution”. In: 2020 25th International Conference on Pattern Recognition (ICPR), pp. 4949–4956. DOI:10.1109/ICPR48806.2021.9413242.
+Link to their code: https://github.com/garygsw/smooth-taylor/blob/master/attribution/eval.py
+"""
+
 DEVICE = "cuda"
 
 NORMALIZE_TRANSFORM = transforms.Compose([
@@ -25,45 +31,6 @@ INVERSE_TRANSFORM = transforms.Compose([
     std=[1 / 0.229, 1 / 0.224, 1 / 0.225]
 )
 ])
-
-def average_total_variation(img, norm=1):
-    """
-    Args:
-    img (array): image array with the shape (H, W)
-    """
-    img = heatmap_normalize(img)
-    total_pixels = img.shape[0] * img.shape[1]
-    x_diff = np.abs(img[:,1:] - img[:,:-1])
-    y_diff = np.abs(img[1:,:] - img[:-1,:])
-    if norm > 1:
-        x_diff = np.power(x_diff, norm)
-        y_diff = np.power(y_diff, norm)
-        total = np.power(np.sum(x_diff), 1. / norm) + np.power(np.sum(y_diff), 1. / norm)
-    else:
-        total = np.sum(x_diff) + np.sum(y_diff)
-    return total / total_pixels
-
-# compute_aupc(heatmap, img_input, img, normalize_transform, model, batch_size, explained_class, input_score, kernel_size, draw_mode, num_regions, num_perturbs):
-
-def compute_autvc(heatmap, downscale = 1.5, min_size = (30, 30), lp_norm = 1):
-    multi_scaled_ATV = compute_multiscaled_atv(
-        heatmap=heatmap,
-        downscale=downscale,
-        min_size=min_size,
-        lp_norm=lp_norm
-    )
-
-    autvc = simps(multi_scaled_ATV, dx=1)
-    return heatmap, multi_scaled_ATV, autvc
-
-def compute_multiscaled_atv(heatmap, downscale, min_size, lp_norm):
-    multiscale_atvs = []
-    for (i, resized) in enumerate(pyramid_gaussian(heatmap, downscale=downscale)):
-        if resized.shape[0]<min_size[0] or resized.shape[1]<min_size[1]:
-            break
-        multiscale_atvs.append(average_total_variation(resized, norm=lp_norm))
-    multiscale_atvs = np.array(multiscale_atvs)
-    return multiscale_atvs
 
 def classify_perturbations(data_loader, model, explained_class):
     all_scores = []
