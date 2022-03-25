@@ -2,7 +2,7 @@
 ### Accepted at the 25th International Conference on Artificial Intelligence and Statistics ([AISTATS '22](https://aistats.org/aistats2022/cfp.html)). 
 #### [Piyushi Manupriya](https://piyushi-0.github.io), [Tarun Ram Menta](https://github.com/peppermenta), [J. Saketha Nath](https://www.iith.ac.in/~saketha/), [Vineeth N Balasubramanian](https://www.iith.ac.in/~vineethnb/index.html)
 
-[Code in PyTorch](https://github.com/Piyushi-0/SEA-NN) | [Link to arxiv pre-print](https://arxiv.org/pdf/2104.09073.pdf) | [Link to the version accepted at ICML '20 workshops (XXAI, WHI)](http://interpretable-ml.org/icml2020workshop/pdf/29.pdf)
+[Code in PyTorch](https://github.com/Piyushi-0/SEA-NN) | [Paper](https://arxiv.org/pdf/2104.09073.pdf) | [Poster](https://drive.google.com/file/d/1FHWFwen5y0q6_IILkxbblRc4ZYi-KVqE/view?usp=sharing) | [Video for Edge/Chrome Browser](https://recorder-v3.slideslive.com/?share=62697&s=a44416ea-2f1f-4fc7-bf94-9e5d015a46a4) | [Link to the version accepted at ICML '20 workshops (XXAI, WHI)](http://interpretable-ml.org/icml2020workshop/pdf/29.pdf)
 
 <img src="SEA-NN.jpg">
 
